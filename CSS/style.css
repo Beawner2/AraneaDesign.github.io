@@ -1,10 +1,10 @@
 @font-face {
     font-family: Titulos ;
-    src: url(/MEDIA/FONTS/Abel-Regular.ttf);
+    src: url(../MEDIA/FONTS/Abel-Regular.ttf);
 }
 @font-face {
     font-family: Textos ;
-    src: url(/MEDIA/FONTS/Kanit-Regular.ttf);
+    src: url(../MEDIA/FONTS/Kanit-Regular.ttf);
 }
 *{
     margin: 0%;
