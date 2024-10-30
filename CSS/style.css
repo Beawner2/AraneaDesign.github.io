@@ -1,0 +1,280 @@
+@font-face {
+    font-family: Titulos ;
+    src: url(/MEDIA/FONTS/Abel-Regular.ttf);
+}
+@font-face {
+    font-family: Textos ;
+    src: url(/MEDIA/FONTS/Kanit-Regular.ttf);
+}
+*{
+    margin: 0%;
+}
+h1, h2, h3, h4 {
+    font-family: Titulos;
+    padding: 0;
+    margin: 0;
+}
+a, p {
+    font-family: Textos;
+}
+:root {
+    --Primario1-color: #12103D;
+    --Primario2-color: #0C5D7B;
+    --Primario3-color: #F20231;
+    --Secundario-color: #EFBF7F;
+    --Fondo-color: #F8E4CC;
+    --Texto1-color: #FEF9EF;
+    --Texto2-color: #161616;
+    
+  }
+
+html{
+    font-size: 18px;
+    background-color: #961d5f;
+}
+p{
+    line-height: 130%;
+    margin: 5%;
+    font-size: 18px;
+}
+a{
+  text-decoration: none;
+}
+
+body{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    background-color: rgb(160, 43, 43);
+}
+/*           */
+/*  NavBar   */
+/*           */
+nav{
+    width: 100%;
+    height: 70px;
+    background-color: var(--Primario1-color);
+    background-color: rgba(250, 235, 215, 0);
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+
+}
+nav ul{
+    Display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    list-style: none;
+}
+nav li {
+    padding-right: 5%;
+}
+nav a{
+    color: var(--Texto2-color);
+}
+nav img{ 
+    max-height: 70px;
+}
+#Principal{
+    width: 100%;
+    height: auto;
+    background-color: var(--Texto1-color);
+}
+/*           */
+/* Seccion 1 */
+/*           */
+#PrincipalSec1{
+    width: 100%;
+    height: 100vh;
+    
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 2fr;
+}
+.Sec1Texto{
+    width: 80%;
+    height: 100vh;
+    margin-top: 10%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 4fr;
+    grid-template-columns: 1fr;
+    margin-left: 10%;
+}
+.Der{
+    text-align: start;
+    font-size: 130px;
+    margin-left: 10%;
+}
+.Izq{
+    text-align: center;
+    font-size: 130px;
+}
+.Sec1SVG{
+    display: flex;
+    justify-content: center;
+}
+.Sec1SVG img{
+    max-height: 30%;
+}
+
+/*           */
+/* Seccion 2 */
+/*           */
+#PrincipalSec2{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+    align-items: center;
+}
+.Sec2Img{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.Sec2Img img{
+    max-height: 50%;
+    border-radius: 20%;
+}
+
+.Sec2Texto{
+    width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+}
+
+
+/*           */
+/* Seccion 3 */
+/*           */
+#PrincipalSec3{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+#Cont{
+    width: 80%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Primario1-color);
+    border-radius: 30px;
+    overflow: hidden;
+}
+.TexTitulo{
+    width: 100%;
+    height: 20%;
+    background-color: var(--Primario2-color);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: var(--Secundario-color);
+}
+.Text{
+    width: 60%;
+    height: 80%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: var(--Texto1-color);
+    
+}
+
+/*           */
+/* Footer  */
+/*           */
+footer{
+    background-color: var(--Texto2-color);
+    width: 100%;
+    height: 300px;
+    display: grid;
+    margin: 0;
+    grid-template-rows: 3fr 5fr 1fr;
+    overflow: hidden;
+}
+
+footer Li, a{ 
+    color: var(--Texto1-color);
+}
+#FooterSup{
+    width: 100%;
+    height: auto;
+   
+    display: grid;
+    overflow: hidden;
+    justify-content: center;
+    justify-items: center;
+    
+}
+
+#FooterSup img {
+    width: 10%;
+    padding: auto;
+    margin: 1% 0 1% 0;
+   
+}
+#FooterMid{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+}
+.FooterList{
+    width: auto;
+    height: 100%;
+    display: flex;
+    padding-right: 100px;
+    
+}
+.FooterList ul{
+    display: grid;
+    margin-left: 0;
+    list-style: none;
+}
+
+.RedSocial{
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.RedSocial img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+#FooterBot{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows:1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+hr{
+    width: 100%;
+}
+.LinkLegal{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    font-size: 12px;
+    text-decoration: underline ;
+    color: var(--Texto1-color);
+    overflow: hidden;
+}
