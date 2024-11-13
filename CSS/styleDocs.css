@@ -30,7 +30,7 @@ a, p {
 
 html{
     font-size: 18px;
-    background-color: #961d5f;
+    
 }
 p{
     line-height: 130%;
@@ -45,7 +45,7 @@ body{
     margin: 0 auto;
     width: 100%;
     height: auto;
-    background-color: rgb(160, 43, 43);
+    background-color: var(--Fondo-color);    
 }
 /*           */
 /*  NavBar   */
@@ -53,24 +53,25 @@ body{
 nav{
     width: 100%;
     height: 70px;
-    background-color: var(--Primario1-color);
-    background-color: rgba(250, 235, 215, 0);
+    background-color: var(--Primario2-color);
     position: sticky;
     top: 0;
     overflow: hidden;
+    
 
 }
 nav ul{
     Display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items:center;
+    
     list-style: none;
 }
 nav li {
     padding-right: 5%;
 }
 nav a{
-    color: var(--Texto2-color);
+    color: var(--Texto1-color);
 }
 nav img{ 
     max-height: 70px;
@@ -80,114 +81,6 @@ nav img{
     height: auto;
     background-color: var(--Texto1-color);
 }
-/*           */
-/* Seccion 1 */
-/*           */
-#PrincipalSec1{
-    width: 100%;
-    height: 100vh;
-    
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 3fr 2fr;
-}
-.Sec1Texto{
-    width: 80%;
-    height: 100vh;
-    margin-top: 10%;
-    display: grid;
-    grid-template-rows: 1fr 1fr 4fr;
-    grid-template-columns: 1fr;
-    margin-left: 10%;
-}
-.Der{
-    text-align: start;
-    font-size: 130px;
-    margin-left: 10%;
-}
-.Izq{
-    text-align: center;
-    font-size: 130px;
-}
-.Sec1SVG{
-    display: flex;
-    justify-content: center;
-}
-.Sec1SVG img{
-    max-height: 30%;
-}
-
-/*           */
-/* Seccion 2 */
-/*           */
-#PrincipalSec2{
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 5%;
-    align-items: center;
-}
-.Sec2Img{
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    margin-left: 10%;
-    margin-top: 10%;
-}
-.Sec2Img img{
-    max-height: 50%;
-    border-radius: 20%;
-}
-
-.Sec2Texto{
-    width: 80%;
-    height: auto;
-    display: grid;
-    grid-template-rows: 2fr 3fr;
-}
-
-
-/*           */
-/* Seccion 3 */
-/*           */
-#PrincipalSec3{
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-}
-#Cont{
-    width: 80%;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--Primario1-color);
-    border-radius: 30px;
-    overflow: hidden;
-}
-.TexTitulo{
-    width: 100%;
-    height: 20%;
-    background-color: var(--Primario2-color);
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    color: var(--Secundario-color);
-}
-.Text{
-    width: 60%;
-    height: 80%;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    color: var(--Texto1-color);
-    
-}
-
 /*           */
 /* Footer  */
 /*           */
@@ -266,6 +159,7 @@ footer Li, a{
 }
 hr{
     width: 100%;
+    height: 0px;;
 }
 .LinkLegal{
     width: 100%;
@@ -278,4 +172,30 @@ hr{
     text-decoration: underline ;
     color: var(--Texto1-color);
     overflow: hidden;
+}
+/*           */
+/* contenido  */
+/*           */
+
+#Principal{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background-color: var(--Fondo-color);  
+}
+#Politicas{
+    width: 80%;
+    height: auto;
+    padding-bottom: 4%;
+    padding-top: 5%;
+}
+#Politicas li{
+    list-style: none;
+    text-decoration: none;
+}
+#Politicas a {
+    color: var(--Texto2-color);
+    text-decoration: underline;
 }
