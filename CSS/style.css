@@ -524,7 +524,7 @@ hr{
     width: 100%;
     height: 100%;
     grid-area: B;
-    background-image: url(/MEDIA/PNG/PromoEspecial.png);
+    background-image: url(../MEDIA/PNG/PromoEspecial.png);
     background-size: contain;
     background-repeat: no-repeat;
     filter: drop-shadow(7px 7px 1px #0000005e);
@@ -545,7 +545,7 @@ hr{
     transform: scale(1.05);
 }
 .SecA{
-    background-image: url(/MEDIA/PNG/PromoEspecial.png);
+    background-image: url(../MEDIA/PNG/PromoEspecial.png);
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -553,13 +553,13 @@ hr{
 
 #SecB{
     grid-area: A;
-    background-image: url(/MEDIA/PNG/serviciosIndividuales.png);
+    background-image: url(../MEDIA/PNG/serviciosIndividuales.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
 #SecC{
     grid-area: C;
-    background-image: url(/MEDIA/PNG/Promocion\ 1.png);
+    background-image: url(../MEDIA/PNG/Promocion\ 1.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
