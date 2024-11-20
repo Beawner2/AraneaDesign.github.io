@@ -598,7 +598,7 @@ hr{
 .PrevPortafolio:hover{
     border-radius: 0px 20px 20px 0px;
 }
-.InfoOMO a, h2, h3{
+.InfoOMO a, h2, h3, p{
     font-size: 13px;
     text-align: center;
 }
